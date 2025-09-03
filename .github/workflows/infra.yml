@@ -1,0 +1,12 @@
+name: Infra Workflow
+
+on: 
+  push:
+    branches:
+      - main
+      - feature/**
+jobs:
+  job1:
+    name: first job
+    runs-on: sheetalrunner
+ 
