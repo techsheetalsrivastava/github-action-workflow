@@ -6,10 +6,19 @@ on:
       - main
       - feature/**
 jobs:
-  job1:
-    name: first job
-    runs-on: sheetalrunner
-    steps:
-      - name: myfirst step
-        run: this is the first step
+  # job1:
+  #   name: first job
+  #   runs-on: sheetalrunner
+  #   steps:
+  #     - name: myfirst step
+  #       run: this is the first step
+    terraformjob:
+      name: terraform job
+      runs-on: sheetalrunner
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v5.0.0
+        
+    
+        
  
