@@ -9,4 +9,7 @@ jobs:
   job1:
     name: first job
     runs-on: sheetalrunner
+    steps:
+      - name: myfirst step
+        run: this is the first step
  
